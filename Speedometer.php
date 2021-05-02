@@ -3,18 +3,16 @@
 Class Speedometer
 
 {
-    public const KILOMETERS_CONVERSION = 1.609;
+    public const MILES_TO_KM_CONVERSION = 1.609;
 
     public static function convertKmToMiles(float $kilometers): ?float
     {   
-    return $kilometers / self::KILOMETERS_CONVERSION;
+    return $kilometers / self::MILES_TO_KM_CONVERSION;
     }
-
-    public const MILES_CONVERSION = 1.609;
 
     public static function convertMilesToKm(float $miles): ?float
     {   
-    return $miles * self::MILES_CONVERSION;
+    return $miles * self::MILES_TO_KM_CONVERSION;
     }
 }
 
